@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block title %}Home | {{ PROJECT_TITLE }}{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-12 col-xl-10">
+        <div class="p-4 p-md-5 mb-4 bg-light rounded-3 border shadow-sm text-center">
+            <div class="container-fluid py-2 py-md-5">
+                <h1 class="display-5 fw-bold text-dark">Welcome to {{ BRAND_NAME }}</h1>
+                <p class="fs-5 fs-md-4 text-secondary mt-3">
+                    A professional Django boilerplate with automated breadcrumbs.
+                </p>
+                <hr class="my-4 mx-auto" style="max-width: 150px;">
+                <div class="d-flex justify-content-center align-items-center gap-2">
+                    <span class="text-muted small text-uppercase fw-semibold">Environment:</span>
+                    {% if debug_status %}
+                        <span class="badge bg-warning text-dark px-3 py-2 shadow-sm">Development Mode</span>
+                    {% else %}
+                        <span class="badge bg-success px-3 py-2 shadow-sm">Production Mode</span>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+
+        <div class="row align-items-md-stretch g-4">
+            <div class="col-12 col-md-6">
+                <div class="h-100 p-4 p-md-5 text-white bg-dark rounded-3 shadow-sm">
+                    <h2 class="h3">Modular Design</h2>
+                    <p class="mb-0 opacity-75">Logic isolated in <code>apps/</code>. Clean and scalable.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="h-100 p-4 p-md-5 bg-white border rounded-3 shadow-sm">
+                    <h2 class="h3">System Monitoring</h2>
+                    <p class="text-secondary">Health monitoring for Database and Storage.</p>
+                    <div class="mt-4">
+                        <a href="/health/" class="btn btn-outline-secondary btn-sm px-4" target="_blank">View Status</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
