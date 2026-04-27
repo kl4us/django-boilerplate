@@ -14,9 +14,6 @@ environ.Env.read_env(os.path.join(BASE_DIR, ".env"))
 SECRET_KEY = env("SECRET_KEY")
 DEBUG = env("DEBUG")
 
-# CMS Configuration
-CMS_ENABLED = env("CMS_ENABLED", default=True)
-
 ALLOWED_HOSTS = []
 
 # Application definition
@@ -37,10 +34,6 @@ INSTALLED_APPS = [
     # local apps
     "apps.core",
 ]
-
-# Conditionally add CMS app if enabled
-if CMS_ENABLED:
-    INSTALLED_APPS.append("apps.cms")
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",

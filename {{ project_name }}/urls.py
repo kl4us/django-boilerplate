@@ -22,10 +22,6 @@ urlpatterns = [
     path("", include("apps.core.urls")),
 ]
 
-# Conditionally include CMS URLs if enabled
-if settings.CMS_ENABLED:
-    urlpatterns.append(path("p/", include("apps.cms.urls", namespace="cms")))
-
 if settings.DEBUG:
     try:
         import debug_toolbar
