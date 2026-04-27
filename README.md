@@ -142,8 +142,7 @@ The `docker-compose.yml` includes:
 
 To customize, edit `docker-compose.yml` to add database services (PostgreSQL, Redis, etc.).
    ```
-
-   Access the application at `http://127.0.0.1:8000/`
+Access the application at `http://127.0.0.1:8000/`
 
 ## Usage
 
@@ -192,7 +191,7 @@ python manage.py shell_plus
 ### Install Development Dependencies
 
 ```bash
-pip install -e ".[dev]"
+uv sync
 ```
 
 ### Debug Toolbar
@@ -239,26 +238,6 @@ python -c "from django.core.management.utils import get_random_secret_key; print
 - [ ] Set up HTTPS/SSL
 - [ ] Configure static and media file serving
 - [ ] Set up database backups
-
-### Running with Gunicorn
-
-```bash
-pip install gunicorn
-gunicorn config.wsgi:application
-```
-
-## Build Template
-
-This repository includes a template builder script. To create a clean template:
-
-```bash
-python build_template.py
-```
-
-This script:
-- Copies the project to a clean template directory
-- Removes development files and cache
-- Preserves git history
 
 ## License
 
