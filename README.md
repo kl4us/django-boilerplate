@@ -124,18 +124,6 @@ This project includes a production-ready multistage Dockerfile and docker-compos
 - **Health Checks**: Built-in health monitoring using Django's health check endpoint
 - **Static Files**: Volume support for collected static files
 
-### Required Dependencies
-
-Add to `pyproject.toml`:
-```toml
-dependencies = [
-    "django>=6.0.4",
-    "gunicorn>=23.0.0",
-    "uvicorn>=0.30.0",
-    # ... other dependencies
-]
-```
-
 ### Environment Variables
 
 Create a `.env` file or pass environment variables:
