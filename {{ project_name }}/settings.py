@@ -28,9 +28,6 @@ INSTALLED_APPS = [
     # third-party apps
     "health_check",
     "whitenoise.runserver_nostatic",
-    "view_breadcrumbs",
-    "tinymce",
-    "mptt",
     # local apps
     "apps.core",
 ]
@@ -127,14 +124,6 @@ if DEBUG:
     MIDDLEWARE.insert(0, "debug_toolbar.middleware.DebugToolbarMiddleware")
 
     INTERNAL_IPS = ["127.0.0.1"]
-
-TINYMCE_DEFAULT_CONFIG = {
-    "height": "500px",
-    "width": "100%",
-    "menubar": "file edit view insert format tools table help",
-    "plugins": "advlist autolink lists link image charmap print preview anchor searchreplace visualblocks code fullscreen insertdatetime media table paste code help wordcount",
-    "toolbar": "undo redo | formatselect | bold italic backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | removeformat | help",
-}
 
 PROJECT_TITLE = env("PROJECT_TITLE", default="Django Project")
 BRAND_NAME = env("BRAND_NAME", default="DjangoBrand")

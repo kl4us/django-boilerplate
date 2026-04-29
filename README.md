@@ -8,9 +8,7 @@ A production-ready Django project template with best practices, pre-configured a
 - **Pre-configured Apps**:
   - `django-environ` - Environment variable management
   - `django-health-check` - Application health checks
-  - `django-mptt` - Hierarchical/tree data structure support
-  - `django-tinymce` - Rich text editing
-  - `django-view-breadcrumbs` - Breadcrumb navigation
+
   - `whitenoise` - Static file serving for production
 - **Development Tools**:
   - Django Debug Toolbar

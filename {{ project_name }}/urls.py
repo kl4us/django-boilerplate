@@ -17,7 +17,6 @@ urlpatterns = [
         ),
         name="health_check",
     ),
-    path("tinymce/", include("tinymce.urls")),
     # local apps
     path("", include("apps.core.urls")),
 ]
