@@ -72,9 +72,6 @@ dependencies = [
     { name = "django" },
     { name = "django-environ" },
     { name = "django-health-check" },
-    { name = "django-mptt" },
-    { name = "django-tinymce" },
-    { name = "django-view-breadcrumbs" },
     { name = "gunicorn" },
     { name = "uvicorn" },
     { name = "whitenoise" },
@@ -92,9 +89,6 @@ requires-dist = [
     { name = "django", specifier = ">=6.0.4" },
     { name = "django-environ", specifier = ">=0.13.0" },
     { name = "django-health-check", specifier = ">=4.4.0" },
-    { name = "django-mptt", specifier = ">=0.18.0" },
-    { name = "django-tinymce", specifier = ">=5.0.0" },
-    { name = "django-view-breadcrumbs", specifier = ">=2.5.1" },
     { name = "gunicorn", specifier = ">=23.0.0" },
     { name = "uvicorn", specifier = ">=0.30.0" },
     { name = "whitenoise", specifier = ">=6.12.0" },
@@ -152,54 +146,6 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/f3/91/604e73b1c74da15af9a249a76c78b76f715f79e67d6937682957ae8cd407/django_health_check-4.4.0.tar.gz", hash = "sha256:1529886e49c8b443454e129e36fd024a09d025268ae8fb2e60816482c64530bb", size = 21713, upload-time = "2026-04-19T17:46:40.44Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/1e/f8/dfa721f8c25e5e1d7cad7742b4daf0eeafb29f8d8c19e005289c74dd53a5/django_health_check-4.4.0-py3-none-any.whl", hash = "sha256:23595410569c4987c60bd44cd7e5a59a0f2826c838499ffe887a976905314753", size = 26824, upload-time = "2026-04-19T17:46:39.226Z" },
-]
-
-[[package]]
-name = "django-js-asset"
-version = "3.1.2"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "django" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/e6/91/c63f136f553ec24fc46ccf20ac7292a8df04815b383975b6f3f7f0060217/django_js_asset-3.1.2.tar.gz", hash = "sha256:1fc7584199ed1941ed7c8e7b87ca5524bb0f2ba941561d2a104e88ee9f07bedd", size = 9471, upload-time = "2025-03-04T15:22:49.789Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/a6/cf/b208767db5e56b5189829f753eec6a14ee75d074922dc2bd19220b22a34d/django_js_asset-3.1.2-py3-none-any.whl", hash = "sha256:b5ffe376aebbd73b7af886d675ac9f43ca63b39540190fa8409c9f8e79145f68", size = 5905, upload-time = "2025-03-04T15:22:51.152Z" },
-]
-
-[[package]]
-name = "django-mptt"
-version = "0.18.0"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "django-js-asset" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/eb/25/04bb8e4384f3484dabbd0e2a84946f1c972b95b07512509a17aaa361be0f/django_mptt-0.18.0.tar.gz", hash = "sha256:cf5661357ff22bc64e20d3341c26e538aa54583aea0763cfe6aaec0ab8e3a8ee", size = 71407, upload-time = "2025-08-26T09:27:01.05Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/51/9e/78aad58a90f2e4d0c898eeadd2f2b720bcae29b43676dd37c2b627c4c6c6/django_mptt-0.18.0-py3-none-any.whl", hash = "sha256:bfa3f01627e3966a1df901aeca74570a3e933e66809ebf58d9df673e63627afb", size = 120157, upload-time = "2025-08-26T09:27:02.168Z" },
-]
-
-[[package]]
-name = "django-tinymce"
-version = "5.0.0"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "django" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/0a/71/e9556c8bc1d99c0cb4081af0abc6440d7cf53c87b6c7da7b117f2de24881/django_tinymce-5.0.0.tar.gz", hash = "sha256:6257669ed596accf5fa967ff3061276b2c5352baac1bbc658fcd8252b12ca38a", size = 1161002, upload-time = "2025-10-21T19:25:25.831Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/21/22/b7b9299b40995b524bb2f6d61ae55bd690858630ff5e0ba9a06210313195/django_tinymce-5.0.0-py3-none-any.whl", hash = "sha256:c2e9c5efd2cc6c036f4c57e602b133180433e2bd1513b897089d3c4fb4e20579", size = 1400312, upload-time = "2025-10-21T19:25:24.113Z" },
-]
-
-[[package]]
-name = "django-view-breadcrumbs"
-version = "2.5.1"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "django" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/a7/96/25123c58f6f4a5dc207f285a0c0ddaad106792b603bdd7687e2dedc39ea5/django-view-breadcrumbs-2.5.1.tar.gz", hash = "sha256:b214c3758f6159d1ad8d76a21e7430a9f208be52fc79ba021e13a2ee675dbb3b", size = 47740, upload-time = "2023-11-07T01:28:13.412Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/95/c9/71dd2ed51e24a236b8267ddfa1ab2863647468f7a720aaa6151c336057a5/django_view_breadcrumbs-2.5.1-py3-none-any.whl", hash = "sha256:0405af06d416c661edfea8d0b5023b37ec016edfb9ce8646c6b4a39127d48620", size = 25774, upload-time = "2023-11-07T01:28:11.289Z" },
 ]
 
 [[package]]
